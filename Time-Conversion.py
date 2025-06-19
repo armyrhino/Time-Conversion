@@ -2,7 +2,7 @@
 
 from tkinter import *
 import tkinter as Tk
-from datetime import datetime, tzinfo, timedelta
+from datetime import datetime
 from time import *
 
 ###################################################################################
@@ -168,7 +168,7 @@ class Conversion(Frame):
             except ValueError or AttributeError:
                 self.ErrorHandle()
                 
-    def ErrorHandle(self, parent = None, **options):
+    def ErrorHandle(self):
             error_window = Tk()
             error_window.title("Error")
             error_window.grid()
