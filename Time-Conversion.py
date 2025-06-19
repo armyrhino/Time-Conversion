@@ -1,6 +1,7 @@
 #! /usr/bin/python
 
 from tkinter import *
+import tkinter as Tk
 from datetime import datetime, tzinfo, timedelta
 from time import *
 
