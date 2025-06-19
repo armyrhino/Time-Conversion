@@ -9,6 +9,7 @@ from time import *
 #                                Global Variables                                 #
 ###################################################################################
 
+Frame = Tk()
 currentTime = datetime.now()
 tt = currentTime.timetuple()
 year = int(tt.tm_year)
@@ -26,7 +27,6 @@ color1 = 'light blue'
 class Conversion(Frame):
     def __init__(self, parent = None, **options):
             Frame.__init__(self, parent, background = color1, **options)
-            Frame = Tk()
             self.grid(columnspan = 10, rowspan = 16, sticky = 'NSEW')
             self.winfo_toplevel().title("Conversion Tool")
             self.widgets()
