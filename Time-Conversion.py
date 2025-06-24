@@ -9,7 +9,6 @@ from time import *
 #                                Global Variables                                 #
 ###################################################################################
 
-Frame = Tk()
 currentTime = datetime.now()
 tt = currentTime.timetuple()
 year = int(tt.tm_year)
